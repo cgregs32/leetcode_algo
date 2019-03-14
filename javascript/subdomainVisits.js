@@ -4,7 +4,6 @@ var subdomainVisits = function(cpdomains) {
     const visits = parseInt(domainStr.split(" ")[0]);
     const domains = domainStr.split(" ")[1].split(".");
 
-    // for (let j = 0; j < domains.length; j++)
     for (let j = 0; j < domains.length; j++) {
       key = domains[j];
 
