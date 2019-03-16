@@ -4,9 +4,7 @@ var uncommonFromSentences = function(A, B) {
     wordsHash[word] ? wordsHash[word]++ : (wordsHash[word] = 1);
   });
 
-  return Object.keys(wordsHash).filter(key => {
-    return wordsHash[key] <= 1;
-  });
+  return Object.keys(wordsHash).filter(key => wordsHash[key] <= 1);
 };
 
 (A = "this apple is sweet"), (B = "this apple is sour");
